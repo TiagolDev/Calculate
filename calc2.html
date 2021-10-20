@@ -1,46 +1,121 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<meta http-equiv="refresh" content="30">-->
-    <title>Calculator</title>
-    <link rel="stylesheet" href="calc2.css">
-    <script src="calc2.js"></script>
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="refresh" content="35">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calc2.css">
+        <script src="calc2.js"></script>
+    </head>
 <body>
     <form name="calcSimple" method="POST" action="">
         <fieldset>
             <legend><strong>Black Panter - Calculator</strong></legend>
-                 <label for="oper" >Select the operation</label>
+                <label for="oper">Select the operation</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <select name="oper" id="oper" >
                         <option value="addition">Addition</option>
                         <option value="subtration">Subtration</option>
                         <option value="multiplication">Multiplication</option>
                         <option value="division">Division</option>
-                    </select>
-
-
-            <br><br><br><br><br>
+                    </select><br><br>
             <label name="num0">Enter the first number: </label>
             <input type="" name="num0" id="num0"><br>
 
             <label name="num00">Enter the second number: </label>
             <input type="" name="num00" id="num00">
-            
-            
-           <br><br><br>
-       
-           <input type="button" value="Calculate" class="butt" onclick="Calculate(document.calcSimple.oper.value)">
-           <input type="button" value="Clean" class="butt" onclick="Clean(document.calcSimple.oper.value)">
-           <br><br><br>
-        
-           <label>Result: </label> &nbsp;&nbsp;
-           <div id="res"></div>
-           <br>           
+                    <br><br><br>       
+                <input type="button" value="Calculate" class="butt" onclick="Calculate(document.calcSimple.oper.value)">
+                <input type="button" value="Clean" class="butt" onclick="Clean(document.calcSimple.oper.value)">
+                    <br><br><br>
+            <label>Result: </label> &nbsp;&nbsp;
+            <div id="res"></div><br>      
         </fieldset>
     </form>
 </body>
 </html>
     
+<!-- body{ 
+    position: absolute;
+    left: 25%;
+    height: 65%;
+    width: 55%;
+    font-size: 20px;
+    background-color: #000000;
+    color: #5c01a8
+}
+form{
+    border: solid #ccc 1,5px;
+    border-radius: 10px;
+}
+form fieldset{
+    margin: 10px auto 10px auto;
+    width: 45%;
+    border: solid #ffffff 3px;
+    padding: 3%;
+    background-color: #5c01a8;
+    color: #ffff00;
+}
+form legend{
+    padding: 6px;
+    margin: 10px;
+    border: solid #ffffff8c 2px;
+    font-size: 90%;
+    font-weight: bold;
+    background-color: #5c01a8;
+    color: #ffff00;
+}
+form label[oper]{
+    display: block;
+    font-size: 11px;    
+}
+form select{
+    background-color: #731c8e;
+    color: #ffff00;
+}
+form input{
+    width: 65%;
+    height: 7.5%;
+    border: solid #ccc 1,5px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffff00;
+    /* --caret-color: #ffff00; */
+}
+div{
+    height: 7.5%;
+    width: 65%;
+    border: solid #ccc 1,5px;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffff00;
+}
+#num0,#num00{
+    height: 7.5%;
+    width: 65%;
+    border: solid #cccccc 1,5px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffff00;
+}
+.butt{
+    width: 38%;
+    border: solid #ccc 1,5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #d9c618ab;
+    color: #000000;
+} -->
